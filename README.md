@@ -1,20 +1,10 @@
 # vite-react-ts-linting
 
-## Simple Template
+## TODO
 
-- this is just a super simple template I use to set up my React Projects
+- top section
+- setting (texts part)
+- csv part (part of texts)
+- actual user message (message part)
 
-## Features
-
-- TS
-- Linting (Eslint + Prettier)
-- Dynamic alias for src file
-- Husky -> pre-commit lint of staged files
-- Basic setup for vercel, vite, vitest
--TailwindCss setup
-
-## Getting Started
-
-- install dependencies
-- replace title and icon in index.html
-- replace name in package.json
+- login - tryout prebuilt auth package

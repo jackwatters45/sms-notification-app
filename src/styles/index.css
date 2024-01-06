@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: "Roboto", sans-serif;
+	line-height: 1.5;
+	color-scheme: light;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+button {
+	background: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+:hover {
+	transition: all 0.1s ease-in-out;
+}
+
+input {
+	background: transparent;
+}
