@@ -1,16 +1,11 @@
-import { mdiChevronLeft } from "@mdi/js";
-import Icon from "@mdi/react";
+import NavOptions from "./NavOptions";
+import PhoneData from "./PhoneData";
 
-// TODO make input actually centers
 const Nav = () => {
 	return (
-		<nav className="flex justify-between py-1 -ml-2">
-			<div className="flex items-center">
-				<Icon path={mdiChevronLeft} size={1.5} color={"#3b82f6"} />
-				<h1 className="text-blue-500 text-lg">SMS Reminders</h1>
-			</div>
-			<input type="text" value={"Allow user to edit name"} />
-			<div className="text-blue-500 text-lg">Logout</div>
+		<nav className="flex flex-0 flex-col bg-neutral-100 border-b border-neutral-300 border-solid font-medium pb-2  pt-4 gap-2">
+			<PhoneData />
+			<NavOptions avatar="" />
 		</nav>
 	);
 };
