@@ -11,9 +11,12 @@ This application enables users to upload a CSV file, select relevant fields to d
 ## TODO
 
 - create message settings
-- text message little curly thing
+  - scheduled
+  - recurring
+- add delivered thing
 - mess with grey color (zinc, natural, etc)
 - typing responsive (new row) -> make sure bottom moves up as message does
+- custom fields in message
 
 - actual logic for frontend actions
   - add new message

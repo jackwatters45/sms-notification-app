@@ -36,3 +36,31 @@ a {
 input {
 	background: transparent;
 }
+
+.with-tail {
+	position: relative;
+}
+
+.with-tail::after {
+	content: "";
+	position: absolute;
+	bottom: -0.5rem;
+	left: -0px;
+	border-width: 1rem;
+	border-style: solid;
+	border-color: transparent transparent transparent #e5e5e5;
+}
+
+.with-tail-blue {
+	position: relative;
+}
+
+.with-tail-blue::after {
+	content: "";
+	position: absolute;
+	bottom: -0.5rem;
+	right: -0px;
+	border-width: 1rem;
+	border-style: solid;
+	border-color: transparent #3b82f6 transparent transparent;
+}
