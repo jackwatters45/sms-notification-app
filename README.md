@@ -10,16 +10,15 @@ This application enables users to upload a CSV file, select relevant fields to d
 
 ## TODO
 
-- create message settings
-  - scheduled
-  - recurring
-- add delivered thing
+
 - mess with grey color (zinc, natural, etc)
 - typing responsive (new row) -> make sure bottom moves up as message does
-- custom fields in message
 
-- actual logic for frontend actions
-  - add new message
+- custom fields in message
+- create message settings
+
+  - scheduled
+  - recurring
 
 ### Auth
 
@@ -32,6 +31,9 @@ This application enables users to upload a CSV file, select relevant fields to d
 
 ### frontend updates
 
-- when send message add to texts and then resend instructions
+- resend instructions
+- add new message
+- add delivered thing
+- add time sent
 
 ### NextJs??

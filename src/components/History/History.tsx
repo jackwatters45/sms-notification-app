@@ -1,4 +1,5 @@
 import Instructions from "./Instructions";
+import useHistory from "./useHistory";
 
 const MESSAGES = [
 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.",
@@ -8,12 +9,14 @@ const MESSAGES = [
 ];
 
 const History = () => {
+	const { middleRowRef } = useHistory();
+
 	return (
-		<div className="flex-1 overflow-y-auto">
+		<div className="flex-1 overflow-y-auto flex flex-col" ref={middleRowRef}>
 			{MESSAGES.map((message, i) => (
-				<div key={i} className="flex  flex-col gap-1 py-2 px-4 ">
+				<div key={i} className="flex flex-col gap-1 py-2 px-4 ">
 					<Instructions />
-					<div className="self-center text-neutral-400 text-lg my-2 mb-1">
+					<div className="self-center text-neutral-400 text-lg mt-2 mb-1">
 						<span className="font-medium mr-1">Yesterday</span>
 						<span>9:18pm</span>
 					</div>
@@ -22,6 +25,9 @@ const History = () => {
 					</div>
 				</div>
 			))}
+			<div className="self-end text-neutral-400 text-lg font-medium pr-4 my-1">
+				Delivered
+			</div>
 		</div>
 	);
 };
