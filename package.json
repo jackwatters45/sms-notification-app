@@ -36,6 +36,7 @@
 		"@tanstack/react-router": "^1.2.6",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.0",
+		"libphonenumber-js": "^1.10.53",
 		"lucide-react": "^0.308.0",
 		"rc-textarea": "^1.6.3",
 		"react": "^18.2.0",

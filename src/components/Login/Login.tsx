@@ -1,26 +1,22 @@
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import * as z from "zod";
-
-const formSchema = z.object({
-	username: z.string().min(2).max(50),
-});
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import AlternateLogins from "./AlternateLogins";
+import LocalLogin from "./LocalLogin";
 
 const Login = () => {
-	const form = useForm<z.infer<typeof formSchema>>({
-		resolver: zodResolver(formSchema),
-		defaultValues: {
-			username: "",
-		},
-	});
-
-	function onSubmit(values: z.infer<typeof formSchema>) {
-		// Do something with the form values.
-		// ✅ This will be type-safe and validated.
-		console.log(values);
-	}
-
-	return <div></div>;
+	return (
+		<div className="flex justify-center items-center h-screen bg-neutral-100">
+			<Card className="w-[min(90vw,400px)] bg-white shadow-2xl rounded-lg">
+				<CardHeader>
+					<CardTitle>SMS Reminders</CardTitle>
+					<CardDescription>Easily send targeted bulk SMS to groups</CardDescription>
+				</CardHeader>
+				<CardContent>
+					<LocalLogin />
+					<AlternateLogins />
+				</CardContent>
+			</Card>
+		</div>
+	);
 };
 
 export default Login;

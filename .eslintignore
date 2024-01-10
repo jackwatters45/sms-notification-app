@@ -9,4 +9,5 @@ tailwind.config.js
 postcss.config.js
 coverage/
 tests/setup.js
+src/components/ui/*
 ```

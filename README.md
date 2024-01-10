@@ -4,7 +4,7 @@ This application enables users to upload a CSV file, select relevant fields to d
 
 ## TODO
 
-- rename shit better
+- finish login frontend
 
 - custom fields in message
 - create message settings
