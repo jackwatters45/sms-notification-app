@@ -3,7 +3,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
-// TODO Autofill, errors, functionality
 const formSchema = z.object({
 	username: z
 		.string()

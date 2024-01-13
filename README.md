@@ -4,20 +4,20 @@ This application enables users to upload a CSV file, select relevant fields to d
 
 ## TODO
 
-- finish login frontend
+- create page
+- not found
 
 - custom fields in message
 - create message settings
 
+- finish login frontend
+
   - scheduled
   - recurring
 
-### Auth
-
-- login - tryout prebuilt auth package
-
 ### backend part
 
+- login - tryout prebuilt auth package
 - test out prisma + postgressql
 - actual implementation of backend
 

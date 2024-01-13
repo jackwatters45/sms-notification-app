@@ -10,7 +10,7 @@ const GroupNav = () => {
 
 	return (
 		<Nav>
-			<div className="flex justify-center items-center px-8 -ml-2 text-xl">
+			<div className="-pl-2 flex h-24 items-center justify-center px-8 text-xl">
 				<Link to="/" className="absolute left-8 flex items-center">
 					<Icon path={mdiChevronLeft} size={1.5} color={"#3b82f6"} />
 					<h1 className="text-blue-500 ">SMS Reminders</h1>
@@ -19,13 +19,19 @@ const GroupNav = () => {
 					<img src={avatar} alt="Group" className="h-16 w-16 rounded-full" />
 					<input
 						type="text"
-						className="font-normal text-lg"
+						className="text-lg font-normal"
 						value={"Allow user to edit name"}
 					/>
 				</div>
-				<div className="absolute right-10 text-blue-500">
+				<button
+					className="absolute right-10 cursor-pointer text-blue-500"
+					// TODO -> modal
+					onClick={() => {
+						console.log("");
+					}}
+				>
 					<Icon path={mdiCogOutline} size={1.5} color={"#3b82f6"} />
-				</div>
+				</button>
 			</div>
 		</Nav>
 	);

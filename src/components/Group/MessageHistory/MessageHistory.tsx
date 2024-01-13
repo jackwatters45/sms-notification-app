@@ -1,7 +1,14 @@
+import SentMessage from "@/components/Shared/Messages/Sent/SentMessage";
 import Instructions from "./Instructions";
 import useMessageHistory from "./useMessageHistory";
+import MessageDate from "./MessageDate";
 
-const MESSAGES = [
+type MessageWithDate = {
+	message: string;
+	date: string;
+};
+
+const MESSAGES: string[] = [
 	"Just saw the most amazing sunset at the beach!",
 	"Have you tried the new cafe downtown? Their coffee is fantastic!",
 	"Can't believe how fast this year is going. Already making plans for the holidays.",
@@ -14,24 +21,32 @@ const MESSAGES = [
 	"Just finished a DIY project at home. It's so rewarding to create something with your own hands.",
 ];
 
+const getRandomDate = (): string => {
+	const start = new Date(2022, 0, 1);
+	const end = new Date();
+	return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()))
+		.toISOString()
+		.split("T")[0];
+};
+
+const messagesWithDates: MessageWithDate[] = MESSAGES.map((message) => ({
+	message,
+	date: getRandomDate(),
+}));
+
 const MessageHistory = () => {
 	const { middleRowRef } = useMessageHistory();
 
 	return (
-		<div className="flex-1 overflow-y-auto flex flex-col" ref={middleRowRef}>
-			{MESSAGES.map((message, i) => (
-				<div key={i} className="flex flex-col gap-1 py-2 px-4 ">
+		<div className="flex flex-1 flex-col overflow-y-auto" ref={middleRowRef}>
+			{messagesWithDates.map(({ message, date }, i) => (
+				<div key={i} className="flex flex-col gap-1 px-4 py-2 ">
 					<Instructions />
-					<div className="self-center text-neutral-400 text-lg mt-2 mb-1">
-						<span className="font-medium mr-1">Yesterday</span>
-						<span>9:18pm</span>
-					</div>
-					<div className="self-end text-white bg-blue-500 rounded-3xl px-5 py-2 w-fit max-w-[75%] with-tail-blue">
-						{message}
-					</div>
+					<MessageDate messageDate={date} />
+					<SentMessage>{message}</SentMessage>
 				</div>
 			))}
-			<div className="self-end text-neutral-400 text-lg font-medium pr-4 my-1">
+			<div className="my-1 self-end pr-4 text-lg font-medium text-neutral-400">
 				{/* TODO needs to actually deal with failure */}
 				Delivered
 			</div>

@@ -21,18 +21,16 @@ const GroupPreview = ({
 	const { formattedDate } = useGroupPreview(lastMessageTime);
 
 	return (
-		<Link to={id} className="flex px-4 items-center gap-4 h-[100px]">
-			<div>
-				<img
-					src={avatar || defaultUserAvatar}
-					alt="Group"
-					className="h-20 w-20 rounded-full"
-				/>
-			</div>
-			<div className="flex-1 py-4 border-neutral-300 border-t border-solid h-full">
+		<Link to={id} className="flex h-[100px] items-center gap-4 px-4">
+			<img
+				src={avatar || defaultUserAvatar}
+				alt="Group"
+				className="h-20 w-20 rounded-full"
+			/>
+			<div className="h-full flex-1 border-t border-solid border-neutral-300 py-4">
 				<div className="flex justify-between">
 					<span className="font-medium">{name}</span>
-					<span className="text-lg text-neutral-500">{formattedDate}</span>
+					<span className="pr-2 text-lg text-neutral-500">{formattedDate}</span>
 				</div>
 				<div className="text-lg text-neutral-500">{lastMessage}</div>
 			</div>

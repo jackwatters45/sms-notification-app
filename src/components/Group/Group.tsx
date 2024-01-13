@@ -1,5 +1,5 @@
 import GroupNav from "./GroupNav/GroupNav";
-import Message from "./Message";
+import Message from "../Shared/MessageForm";
 import MessageHistory from "./MessageHistory";
 
 const Group = () => {
@@ -7,7 +7,7 @@ const Group = () => {
 		<>
 			<GroupNav />
 			<MessageHistory />
-			<Message />
+			<Message includePlus={false} />
 		</>
 	);
 };
