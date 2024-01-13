@@ -7,7 +7,7 @@ interface NavProps {
 
 const Nav = ({ children }: NavProps) => {
 	return (
-		<nav className="flex flex-0 flex-col bg-neutral-100 border-b border-neutral-300 border-solid font-medium pb-2  pt-4 gap-2">
+		<nav className="flex-0 flex flex-col gap-2 border-b border-solid border-neutral-300 bg-neutral-100 pb-2  pt-4 font-medium">
 			<PhoneData />
 			{children}
 		</nav>

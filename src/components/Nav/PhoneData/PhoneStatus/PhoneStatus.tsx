@@ -9,7 +9,7 @@ const PhoneStatus = () => {
 			<Icon
 				path={mdiBatteryCharging}
 				size={1}
-				className="scale-y-150 scale-x-125 rotate-90"
+				className="rotate-90 scale-x-125 scale-y-150"
 			/>
 		</div>
 	);

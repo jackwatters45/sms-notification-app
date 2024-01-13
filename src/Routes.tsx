@@ -36,7 +36,7 @@ const createRoute = new Route({
 
 const groupRoute = new Route({
 	getParentRoute: () => rootRoute,
-	path: "$groupId",
+	path: "group/$groupId",
 	component: Group,
 });
 

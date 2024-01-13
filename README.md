@@ -4,16 +4,21 @@ This application enables users to upload a CSV file, select relevant fields to d
 
 ## TODO
 
-- create page
-- not found
+- create message modal
+- group settings should open message modal
+
+- create actual options responses
+
+  - create group
+  - send message
+  - deal with logic that doesn't make sense
 
 - custom fields in message
-- create message settings
 
 - finish login frontend
+- TODOs
 
-  - scheduled
-  - recurring
+- upload csv
 
 ### backend part
 
@@ -22,10 +27,5 @@ This application enables users to upload a CSV file, select relevant fields to d
 - actual implementation of backend
 
 ### frontend updates
-
-- resend instructions
-- add new message
-- add delivered thing
-- add time sent
 
 ### NextJs??

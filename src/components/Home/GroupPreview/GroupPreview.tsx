@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import defaultUserAvatar from "@/constants/defaultUserAvatar";
 import useGroupPreview from "./useGroupPreview";
 
-interface IGroupPreviewProps {
+export interface IGroupPreviewProps {
 	id: string;
 	name: string;
 	avatar: string | undefined;
@@ -21,7 +21,7 @@ const GroupPreview = ({
 	const { formattedDate } = useGroupPreview(lastMessageTime);
 
 	return (
-		<Link to={id} className="flex h-[100px] items-center gap-4 px-4">
+		<Link to={`group/${id}`} className="flex h-[100px] items-center gap-4 px-4">
 			<img
 				src={avatar || defaultUserAvatar}
 				alt="Group"

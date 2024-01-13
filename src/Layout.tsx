@@ -8,11 +8,11 @@ const TanStackRouterDevtools =
 				import("@tanstack/router-devtools").then((res) => ({
 					default: res.TanStackRouterDevtools,
 				})),
-		  );
+			);
 
 const Layout = () => {
 	return (
-		<div className="h-screen w-screen flex font-normal text-2xl flex-col ">
+		<div className="flex h-screen w-screen flex-col text-2xl font-normal ">
 			<Outlet />
 			<Suspense>
 				<TanStackRouterDevtools />
