@@ -36,7 +36,7 @@ const MessageForm = ({ includePlus = true }: MessageFormProps) => {
 					placeholder="Message"
 					onInput={handleInput}
 				/>
-				<button className="absolute bottom-2 right-2 flex h-10 w-10 items-center justify-center rounded-full bg-blue-500">
+				<button className="absolute bottom-2 right-2 flex h-10 w-10 items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600">
 					<Icon path={mdiArrowUp} size={1.3} color={"white"} />
 				</button>
 			</div>
