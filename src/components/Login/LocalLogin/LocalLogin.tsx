@@ -38,7 +38,7 @@ const LocalLogin = () => {
 					{showPassword ? "Hide" : "Show"}
 				</button>
 			</div>
-			<Button className="bg-blue-500 hover:bg-blue-400" type="submit">
+			<Button className="bg-blue-500 hover:bg-blue-600" type="submit">
 				Continue
 			</Button>
 		</form>

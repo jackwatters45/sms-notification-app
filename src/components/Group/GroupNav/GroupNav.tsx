@@ -1,9 +1,11 @@
-import { mdiChevronLeft, mdiCogOutline } from "@mdi/js";
+import { mdiChevronLeft } from "@mdi/js";
 import Icon from "@mdi/react";
 import { Link } from "@tanstack/react-router";
 
 import Nav from "@/components/Nav";
 import useGroupNav from "./useGroupNav";
+import GroupSettings from "@/components/GroupSettings";
+import { Input } from "@/components/ui/input";
 
 const GroupNav = () => {
 	const { avatar } = useGroupNav();
@@ -11,27 +13,22 @@ const GroupNav = () => {
 	return (
 		<Nav>
 			<div className="-pl-2 flex h-24 items-center justify-center px-8 text-xl">
-				<Link to="/" className="absolute left-8 flex items-center">
-					<Icon path={mdiChevronLeft} size={1.5} color={"#3b82f6"} />
-					<h1 className="text-blue-500 ">SMS Reminders</h1>
+				<Link
+					to="/"
+					className="absolute left-8 flex items-center text-blue-500 hover:text-blue-600"
+				>
+					<Icon path={mdiChevronLeft} size={1.5} />
+					<h1 className="">SMS Reminders</h1>
 				</Link>
 				<div className="flex flex-col items-center gap-1">
 					<img src={avatar} alt="Group" className="h-16 w-16 rounded-full" />
-					<input
+					<Input
 						type="text"
-						className="text-lg font-normal"
+						className="border-0 bg-transparent text-lg font-normal outline-none"
 						value={"Allow user to edit name"}
 					/>
 				</div>
-				<button
-					className="absolute right-10 cursor-pointer text-blue-500"
-					// TODO -> modal
-					onClick={() => {
-						console.log("");
-					}}
-				>
-					<Icon path={mdiCogOutline} size={1.5} color={"#3b82f6"} />
-				</button>
+				<GroupSettings />
 			</div>
 		</Nav>
 	);

@@ -1,5 +1,4 @@
 import CreateNav from "./Nav";
-
 import Message from "../Shared/MessageForm";
 import CreateGroupDialogue from "./Dialogue/CreateGroupDialogue";
 

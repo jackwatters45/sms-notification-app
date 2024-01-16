@@ -5,7 +5,8 @@ This application enables users to upload a CSV file, select relevant fields to d
 ## TODO
 
 - create message modal
-- group settings should open message modal
+
+- default colors of buttons + inputs
 
 - create actual options responses
 
@@ -16,7 +17,7 @@ This application enables users to upload a CSV file, select relevant fields to d
 - custom fields in message
 
 - finish login frontend
-- TODOs
+- Todos
 
 - upload csv
 
