@@ -11,6 +11,7 @@ import NotFound from "./components/NotFound";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import CreateGroup from "./components/CreateGroup";
+import Table from "./components/GroupTable";
 
 const rootRoute = new RootRoute({
 	component: Layout,
@@ -45,11 +46,19 @@ const notFoundRoute = new NotFoundRoute({
 	component: NotFound,
 });
 
+// TODO -> modal instead of route
+const tableRoute = new Route({
+	getParentRoute: () => rootRoute,
+	path: "table",
+	component: Table,
+});
+
 const routeTree = rootRoute.addChildren([
 	indexRoute,
 	loginRoute,
 	groupRoute,
 	createRoute,
+	tableRoute,
 ]);
 
 const router = new Router({ routeTree, notFoundRoute });

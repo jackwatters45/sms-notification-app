@@ -4,8 +4,6 @@ This application enables users to upload a CSV file, select relevant fields to d
 
 ## TODO
 
-- create message modal
-
 - default colors of buttons + inputs
 
 - create actual options responses
