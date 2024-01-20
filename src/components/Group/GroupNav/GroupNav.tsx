@@ -4,7 +4,7 @@ import { Link } from "@tanstack/react-router";
 
 import Nav from "@/components/Nav";
 import useGroupNav from "./useGroupNav";
-import GroupSettings from "@/components/GroupSettings";
+import GroupOptions from "@/components/Group/GroupOptions";
 import { Input } from "@/components/ui/input";
 
 const GroupNav = () => {
@@ -28,7 +28,7 @@ const GroupNav = () => {
 						value={"Allow user to edit name"}
 					/>
 				</div>
-				<GroupSettings />
+				<GroupOptions />
 			</div>
 		</Nav>
 	);

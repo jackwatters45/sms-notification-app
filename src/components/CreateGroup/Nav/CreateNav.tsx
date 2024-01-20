@@ -2,7 +2,7 @@ import { mdiChevronLeft } from "@mdi/js";
 import Icon from "@mdi/react";
 import Nav from "../../Nav";
 import { Link } from "@tanstack/react-router";
-import GroupSettings from "@/components/GroupSettings";
+import GroupOptions from "@/components/Group/GroupOptions";
 
 const CreateNav = () => {
 	return (
@@ -16,7 +16,7 @@ const CreateNav = () => {
 					<h1 className=" ">Back</h1>
 				</Link>
 				<div className="text-2xl">Create a new group</div>
-				<GroupSettings />
+				<GroupOptions />
 			</div>
 		</Nav>
 	);

@@ -36,7 +36,7 @@ const GroupTable = () => {
 	});
 
 	return (
-		<div className="container mx-auto py-10">
+		<div className="container mx-auto  overflow-y-auto">
 			<div className="rounded-md border border-solid border-black p-4">
 				<Table>
 					<TableCaption>A list of your recent invoices.</TableCaption>
